@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ja"><head><meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Crumble Circus</title>
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;700&family=Zen+Maru+Gothic:wght@500;900&family=DM+Serif+Display&family=Yomogi&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css"></head><body>
+<svg width="0" height="0" style="position:absolute"><filter id="rough"><feTurbulence baseFrequency=".035" numOctaves="2" seed="3"/><feDisplacementMap in="SourceGraphic" scale="5"/></filter></svg>
+<button id="rec" aria-label="B sideとA sideを切り替える"><div class="disc"><div class="lab" id="lab">B<br>side</div></div></button>
+
+<main id="b">
+<div class="w"><section class="s c1 argyle sc hero">
+<div class="rib" style="left:36%;background:linear-gradient(#e0636c,#9a2a3a);--d:1"></div><div class="rib" style="left:55%;background:linear-gradient(#46bccb,#1f7f8e);animation-delay:-2s;rotate:6deg"></div><div class="rib" style="left:70%;background:linear-gradient(#d4a93a,#8a6a1a);animation-delay:-4s"></div>
+<svg class="gar" viewBox="0 0 400 120" preserveAspectRatio="none"><path d="M0 20Q100 110 200 40T400 24" fill="none" stroke="#d4a93a" stroke-width="2" stroke-dasharray="1 5"/><text x="60" y="76">✦</text><text x="140" y="86">★</text><text x="235" y="58">✦</text><text x="320" y="38">★</text></svg>
+<div class="in"><span class="tag">NOW SHOWING — 現実の裏番組</span>
+<div class="tvb"><canvas id="tv" width="64" height="48"></canvas></div>
+<h1 class="lg" id="lg"></h1>
+<p style="font:700 1.25rem Fredoka;color:var(--gold)">Noise for Life!</p>
+<p>チャンネルはそのまま。常識だけ、ひっくり返してお届けします。</p>
+<p style="font-size:.8rem;margin-top:2em;opacity:.8">▼ 砂嵐の向こうへ、スクロール ▼</p></div></section></div>
+
+<div class="w"><section class="s c2 stripe wv" id="world"><div class="in">
+<span class="tag">01 WORLD</span><h2>世界観の概要</h2>
+<div class="cd tk rv"><b>コンセプトは「現実世界の裏番組」</b>この世界は、レコードのA面とB面のように、二つの面でできています。A面は、私たちが暮らす一般的な現実世界(現代)。B面は、そのパラレルワールドで、時代は1980年代初頭です。この作品の舞台はB面。A面という本編の裏で、こっそり放送されている番組、というわけです。</div>
+<div class="cd pp rv"><b>魔法が当たり前に使える社会</b>B面には魔法が存在し、一般的に広く普及しています。魔法が使える人は約9割。まったく使えない人は約1割程度と、かなりの少数派です。</div>
+<div class="cd bb rv"><b>人魚や獣人などの「異形型」</b>B面の住人は基本的にみんな人型です。ただ、ごく稀に、人魚や獣人といった「異形型」の存在が確認されています。異形型は希少価値が非常に高く、そのせいで、人身売買の商品として狙われやすいという悲しい現実があります。</div>
+<div class="cd nt rv"><b>魔法の才能は、ほぼ血筋で決まる</b>魔法が使えるかどうかは、親の血筋がおよそ8割を占めます。魔法使いの親同士から、魔法が使えない子供が生まれることはあります。けれど、魔法が使えない者同士の子供が、魔法を使えるようになることは非常に稀です。</div>
+<div class="cd tk rv"><b>「保護」という名の差別</b>B面世界は、表向きには、魔法が使えない人を「能力の低い者」として保護する方針です。ところが実際には、魔法が使えない人は下に見られ、いじめや迫害の対象になったり、結婚が難しかったりすることが多く、社会問題にもなっています。</div>
+<div class="cd pp rv"><b>魔法の強さは、公的な基準で測られる</b>魔法が使える人の中でも、使える程度は人によって大きく異なります。B面世界には、最も公的に定められた基準があり、強さに応じて「階級」が分けられています。詳しくは、次の「各階級について」で。</div>
+<div class="cd bb rv"><b>検査と成長の目安</b>魔法は、一般的に8歳までには発現すると言われています。初等教育と中等教育では、それぞれ魔法の試験を受けることになっています。魔法が成長することはありますが、だいたいの能力は13歳までに確定すると言われています。</div>
+<div class="cd nt rv"><b>変身魔法を使えるのは、ごく一部</b>変身魔法を使えるのは、一部の上級魔法使いだけ。それもE(Exalted)の中の、さらに一部に限られます。</div>
+<div class="cd tk rv"><b>この世界で生きる団員たち</b>サーカスの団員にも、この世界の影響を受けた人たちがいます。設計士のセオドアは、魔法が一切使えないために、魔法至上主義の実家では「いないモノ」として扱われてきました。ライオンのレオンは、呪いで獣人になったあと、誘拐されて売り飛ばされています。魔法が当たり前の世界は、そこから外れた人にとても冷たいのです。</div>
+<div class="cd pp rv"><b>ここまでのまとめ</b>A面は現代、B面は1980年代初頭のパラレルワールド。B面では、約9割の人が魔法を使え、その強さは公的な階級で測られます。魔法の有無は血筋でほぼ決まり、使えない人は「保護」の名のもとに、下に見られがちです。この作品は、そんな世界の裏側を旅するサーカスの物語です。</div></div></section></div>
+
+<div class="w"><section class="s c4 half dg" id="ranks"><div class="in">
+<span class="tag">02 RANKS</span><h2>各階級について</h2>
+<p>魔法の腕前は、公的に定められた7段階。通信簿より容赦がない。</p><div id="rk"></div>
+<div class="cd nt rv" style="margin-top:34px"><b>居残り指導のお知らせ</b>中等教育の検査でFかDと診断された者は、18歳になるまで半年に1度の指導つき。出席率は強制100%だ。</div></div></section></div>
+
+<div class="w"><section class="s c3 dots sc" id="crumble"><div class="in">
+<span class="tag">03 THE CIRCUS</span>
+<h2><span class="logo2" id="lg-c"></span>Crumble Circus</h2>
+<p style="font:700 1.2rem Fredoka">Noise for Life! <small>(生きるための騒音)</small></p>
+<div class="cd bb rv"><b>元になったのは、劇団Golden Crust</b>Crumble Circusは、アリスの両親、オリビアとスペンサーが運営していた劇団「Golden Crust」が元になっています。モットーは「Noise for Life!(生きるための騒音)」。この作品の舞台はここで、紹介するキャラクターたちは、このサーカスの団員です。</div>
+<div class="cd tk rv"><b>各国を回る移動式サーカス</b>Crumble Circusは移動式のサーカスで、B面世界の各国を回りながら、仲間を集めています。外見は子供用のミニサーカステントですが、アリスの拡張魔法のおかげで、中はとにかく広いのです。</div>
+<div class="cd nt rv"><b>夢と思い出を、焼き直す</b>このサーカスは、終わってしまった劇団の夢や思い出をかき集めて、焼き直しています。そうしてできあがったものが「Crumble(かけら)」。サーカスの名前は、ここから来ています。</div>
+<div class="cd pp rv"><b>A面から招かれる人たち</b>たまに、A面から人が招かれることがあります。招かれた人は、観客として招かれる場合もあれば、サーカス団員としてスカウトされる場合もあります。今回は、この作品を見てくれているあなたも、新しい団員の候補です。</div>
+<div class="cd tk rv"><b>団員はどうやって集まった？</b>創始者はセオドアとモリーで、二人ともアリスに誘われて加わりました。ライオンのレオンは、人身売買の競売にかけられていたところを、アリスが買い物のついでに買い取って仲間になりました(セオドアは泣きました)。マジシャンのレイは、何度も誘いを断ったのに、アリスが夢にまで現れ、最後は押し負けて入団しています。</div>
+<div class="cd bb rv"><b>見どころの演目</b>アリスのいちばんの花形演目は「月を食べたアリス」。言葉通り、月の存在を消してしまうショーです。もうひとつ、マジシャンのレイのステージでは、テント中のすべての魔法が消える特別な演出があります。ブレーカーが落ちるようなイメージです。</div></div></section></div>
+
+<div class="w"><section class="s c5 chk wv" id="oven"><div class="in">
+<span class="tag">04 THE BUS</span><h2>Oven No.8</h2>
+<svg class="bus" viewBox="0 0 240 290"><ellipse cx="120" cy="278" rx="104" ry="9" fill="#0007"/><rect x="22" y="232" width="16" height="42" rx="4" fill="#17110f"/><rect x="202" y="232" width="16" height="42" rx="4" fill="#17110f"/><rect x="30" y="14" width="180" height="236" rx="20" fill="#c0242f" stroke="#f3e6c8" stroke-width="6" paint-order="stroke"/><rect x="40" y="20" width="160" height="8" rx="4" fill="#8f1a24"/><rect x="68" y="32" width="104" height="20" rx="3" fill="#17110f"/><text x="120" y="47" text-anchor="middle" font-family="Fredoka" font-weight="700" font-size="14" fill="#f0a830">OVEN No.8</text><rect x="42" y="58" width="156" height="62" rx="8" fill="#cfe9ee"/><path d="M120 58V120M81 58V120M159 58V120" stroke="#8f1a24" stroke-width="5"/><rect x="42" y="126" width="156" height="16" fill="#e8d49a"/><text x="120" y="138" text-anchor="middle" font-family="Fredoka" font-weight="700" font-size="9" fill="#17110f" letter-spacing="1">BAKER STREET MOBILITY</text><rect x="42" y="148" width="156" height="58" rx="8" fill="#cfe9ee"/><path d="M120 148V206M60 206L100 164M180 206L140 164" stroke="#17110f" stroke-width="3"/><rect x="64" y="212" width="112" height="18" rx="4" fill="#17110f"/><circle cx="50" cy="222" r="10" fill="#f3e6c8"/><circle cx="190" cy="222" r="10" fill="#f3e6c8"/><rect x="76" y="236" width="88" height="26" rx="3" fill="#fff" stroke="#17110f" stroke-width="3"/><text x="120" y="256" text-anchor="middle" font-family="Fredoka" font-weight="700" font-size="19" fill="#d11a28">OV314EN</text></svg>
+<div class="cd pp rv"><b>移動手段は、赤いロンドンバス</b>団員たちは、ロンドンバス「Oven No.8」に乗って、各地を移動しています。外観は、一般的な赤いロンドンバスです。Baker Street Mobility製で、ナンバープレートは白地に赤字の「OV314EN」です。</div>
+<div class="cd bb rv"><b>中は、アリスの魔法で広々</b>外から見れば普通のバスですが、中に入ると、アリスの拡張魔法によって、団員一人につき一部屋以上の空間があります。サーカステントと同じで、見た目と中身は一致しません。</div>
+<div class="cd nt rv"><b>キャッチフレーズ</b>このバスには、「Still Baking Dreams!(まだ夢を焼いている！)」という一言が添えられています。</div>
+<div class="cd tk rv"><b>バスの中の暮らし</b>団員の部屋も、このバスの中にあります。ブランコ乗りの義眼や、ステージの小道具、生活に必要なものの多くを作っているのは、設計士のセオドアです。赤い車体の中には、サーカスの日常がぎゅっと詰まっています。</div>
+<div class="tick"><div>STILL BAKING DREAMS! ✦ STILL BAKING DREAMS! ✦ STILL BAKING DREAMS! ✦ STILL BAKING DREAMS! ✦ STILL BAKING DREAMS! ✦ STILL BAKING DREAMS! ✦ STILL BAKING DREAMS! ✦ STILL BAKING DREAMS! ✦</div></div></div></section></div>
+
+<div class="w"><section class="s c6 stripe dg2" id="ozma"><div class="in">
+<span class="tag">05 AGENCY</span><h2><span class="logo2" style="color:var(--cream)" id="lg-z"></span>O.Z.M.A</h2>
+<div class="fold"><div class="tabs" id="bt"></div><div class="fb" id="bfb"></div></div></div></section></div>
+
+<div class="w"><section class="s c1 argyle sc" id="members"><div class="in">
+<span class="tag">06 CAST</span><h2>団員名簿</h2>
+<p>ポラロイドをめくれば、その人の調査書にご案内。……ところで、一枚だけ空席が見えるのは気のせいかな？</p>
+<div class="pg" id="pg"></div></div></section></div>
+<footer>© Crumble Circus ✦ Still Baking Dreams!</footer>
+</main>
+
+<main id="a">
+<div class="ah"><div class="meta"><span>SIDE A</span><span>LINER NOTES</span><span>現実のほう</span></div>
+<h1>Liner<br>Notes</h1><p>ここは、ステージの照明が落ちたあとの話。B面の裏にあった、ちょっとした種明かしをどうぞ。</p></div>
+<section class="as"><span class="n">01</span><h2>Dear Visitor</h2><p>細谷くるみの拙い作品を見ていただき、ありがとうございます。</p><p>このA面世界タブでは、作品ができるまでの裏話を書いています。B面で伝えきれなかったことも、ここで補完していってもらえたら嬉しいです。</p><p>ただ、結論から言うと、本当に忙しくて、正直いろいろ間に合っていません。このサイトを作っているのも卒展の会期中なので、見られた人と見られなかった人がいると思います。見られなかった人には、世界観がほとんど伝わっていないかもしれません。ごめんなさい。</p><p>そして、最後にひとつ質問です。この作品を見てくれたあなたは、Crumble Circusの新しい団員の候補。あなたなら、サーカスのメンバーとして、どんなことをしますか？</p><span class="no">— 細谷くるみ</span></section>
+<section class="as"><span class="n">02</span><h2>Struggles</h2><p>制作で苦労したことを、ざっくり4つ。</p><div class="tl"><h3>#1 とにかく時間がない</h3>忙しすぎて、予定していたものがいろいろ間に合いませんでした。終わらなさすぎて、連日、締め切りに間に合わない夢を見たくらいです。実際こうして間に合っていないし(笑)</div><div class="tl"><h3>#2 作り込んだのに、伝えきれなかった</h3>世界観もキャラクターも、作り込んだ割に出せなかったものが多いです。O.Z.M.A職員は名前だけの登場になったし、魔法が使える華のある天才マジシャンも、掘り下げたかったのですが時間が足りませんでした。</div><div class="tl"><h3>#3 技術と時間の都合</h3>アリスは、本当はもっと豪華で特徴的な服装にしたかったのですが、3Dモデルを作る都合で最低限に。技術が上がって機会があれば、作り直したいです。コレットも、時間があれば全身を描きたかった。</div><div class="tl"><h3>#4 予定になかったサイト作り</h3>このサイトは、もともと作る予定のないものでした。予定していたものが一応ギリギリ終わったのにかこつけて、今こうして、なぜかサイトづくりに勤しんでいます。全然心が休まりません。</div></section>
+<section class="as"><span class="n">03</span><h2>Spilled<br>Crumbs</h2><p>制作のこぼれ話を、いくつか。</p><div class="tl"><h3>作品の始まり</h3>サーカステーマの作品は、中学3年の受験期に、宮城野高校の卒展を見て決めたものです。初期設定を書いた紙はなくしてしまいましたが、構成はほとんど今と変わっていません。</div><div class="tl"><h3>タイトル「Found you」</h3>都合よく意訳して、「みーつけた！」のつもりです。B面世界はA面世界のパラレルワールドで、A面から人間を招くこともあります。今回は、この作品を見てくれている人たちが、新しいメンバーとして加わる想定です。</div><div class="tl"><h3>没になった主人公、エイダン</h3>中学生の頃のキャラ設定では、エイダン(確か「小さな火」が名前の由来)というドジっ子が主人公でした。今回の鑑賞者の立ち位置、つまり、ひょんなことからサーカスに入団する一般人です。没入感の観点からリストラしましたが、別の場所で出せたら嬉しいです。</div><div class="tl"><h3>魔法の小ネタ</h3>変身魔法は、アリスがバンバン使います。レオンは、元は魔法が下手な人間だったのが、呪いでライオンに変えられています。なので、人間に変身するという意味では、優秀なのかもしれません。やっぱり0か100の男なので。</div><div class="tl"><h3>O.Z.M.A職員たち</h3>名前しか出ていませんが、職員たちの設定もざっくり決めてあります。詳しくは、この下の「Behind the Agency」で。</div></section>
+<section class="as"><span class="n">04</span><h2>Behind<br>the Cast</h2><p>写真をタップすると、その団員の設定と作者メモが読めます。</p><div class="cs" id="cs"></div></section>
+<section class="as"><span class="n">05</span><h2>Behind<br>the Agency</h2><p>調査書にサインした、O.Z.M.A職員たちの設定です。</p><div class="fold"><div class="tabs" id="at"></div><div class="fb" id="afb"></div></div></section>
+<section class="as"><span class="n">06</span><h2>Special<br>Thanks</h2><div class="tl" style="text-align:center"><img id="hana" alt="はなまる太郎" style="width:min(70%,260px);display:block;margin:0 auto 12px;border:2px solid #111"><h3 style="font-size:1.3rem">はなまる太郎</h3>アニメーションに登場する「はなまるランドリー」のイメージキャラクター。<br>キャラクターデザイン:吉川</div></section>
+<p style="text-align:center;padding:30px">左上のレコードをタップするとB面へ戻ります。</p>
+</main>
+
+<div id="viewer"><button class="vx" data-x="viewer">✕ とじる</button><div class="in" id="vc"></div></div>
+<div id="bk"><button class="vx" data-x="bk">✕ とじる</button><div class="card" id="bc"></div></div>
+
+<script src="script.js"></script></body></html>
