@@ -1,6 +1,6 @@
 
 /* ===== 画像の設定(拡張子が違う場合はここだけ直してください。GitHubは大文字小文字を区別します) ===== */
-var EXT_P=".PNG",EXT_D=".PNG",EXT_H=".png";
+var EXT_P = ".png.PNG", EXT_D = ".PNG", EXT_H = ".png";
 var NM=["Alice_Crust","Theodore_Bancroft","Molly_Hayward","Leon_Foster","Luka_Sokolov","Lina_Sokolova","Floris_de_Groot","Colette","Ray_Sterling"];
 var IMGS=NM.map(function(n,i){return "images/polaroid_0"+(i+1)+EXT_P});
 var DOS=NM.map(function(n){return ["images/"+n+"_en"+EXT_D,"images/"+n+"_jp"+EXT_D]});
